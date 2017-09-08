@@ -5,9 +5,14 @@ const Sequelize = require('sequelize');
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
   const datasiswa = sequelizeClient.define('mst_siswa', {
+    id :{
+      type: Sequelize.INTEGER, 
+      primaryKey: true,
+      autoIncrement: true 
+    },
     nomorinduk: {
       type: Sequelize.STRING(20),
-      primaryKey: true,
+      unique: true,
       allowNull: false
     },
     nama: {
@@ -16,6 +21,10 @@ module.exports = function (app) {
     },
     tanggallahir: {
       type: Sequelize.DATE,
+      allowNull: false
+    },
+    tempatlahir: {
+      type: Sequelize.STRING(40),
       allowNull: false
     },
     jenis: {
