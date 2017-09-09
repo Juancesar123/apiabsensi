@@ -35,6 +35,10 @@ module.exports = function (app) {
       type: Sequelize.STRING,
       allowNull: true
     },
+    status: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
   
   
   }, {
