@@ -29,63 +29,63 @@ module.exports = function (app) {
     },
     jenis: {
       type: Sequelize.STRING(40),
-      allowNull: false
+      allowNull: true
     },
     alamat: {
       type: Sequelize.TEXT   ,
-      allowNull: false
+      allowNull: true
     },
     golongandarah: {
       type: Sequelize.STRING(5),
-      allowNull: false
+      allowNull: true
     },
     idkelas: {
       type: Sequelize.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     idagama: {
       type: Sequelize.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     telepon: {
       type: Sequelize.STRING(13),
-      allowNull: false
+      allowNull: true
     },
     hp: {
       type: Sequelize.STRING(13),
-      allowNull: false
+      allowNull: true
     },
     emailpribadi: {
       type: Sequelize.STRING(40),
-      allowNull: false
+      allowNull: true
     },
     foto: {
       type: Sequelize.STRING,
-      allowNull: false
+      allowNull: true
     },
     ayah: {
       type: Sequelize.STRING(40),
-      allowNull: false
+      allowNull: true
     },
     ibu: {
       type: Sequelize.STRING(40),
-      allowNull: false
+      allowNull: true
     },
     nomorhpayah: {
       type: Sequelize.STRING(13),
-      allowNull: false
+      allowNull: true
     },
     nomorhpibu: {
       type: Sequelize.STRING(13),
-      allowNull: false
+      allowNull: true
     },
     statusrec: {
       type: Sequelize.STRING(40),
-      allowNull: false
+      allowNull: true
     },
     kodesekolah: {
       type: Sequelize.STRING(40),
-      allowNull: false
+      allowNull: true
     }
   }, {
     hooks: {

@@ -1,26 +1,25 @@
-// Initializes the `datasiswa` service on path `/datasiswa`
+// Initializes the `mst_kelas` service on path `/masterkelas`
 const createService = require('feathers-sequelize');
-const createModel = require('../../models/datasiswa.model');
-const hooks = require('./datasiswa.hooks');
-const filters = require('./datasiswa.filters');
+const createModel = require('../../models/mst-kelas.model');
+const hooks = require('./mst-kelas.hooks');
+const filters = require('./mst-kelas.filters');
+
 module.exports = function () {
   const app = this;
   const Model = createModel(app);
   const paginate = app.get('paginate');
 
   const options = {
-    name: 'datasiswa',
+    name: 'mst-kelas',
     Model,
     paginate
   };
-  
+
   // Initialize our service with any options it requires
-  app.use('/datasiswa',
-  createService(options)
-);
+  app.use('/masterkelas', createService(options));
 
   // Get our initialized service so that we can register hooks and filters
-  const service = app.service('datasiswa');
+  const service = app.service('masterkelas');
 
   service.hooks(hooks);
 
