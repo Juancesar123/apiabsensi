@@ -6,7 +6,7 @@ const DataTypes = Sequelize.DataTypes;
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
   const mstUseraccess = sequelizeClient.define('mst-useraccess', {
-    id_rx: {
+    id: {
       type: Sequelize.INTEGER, 
       primaryKey: true,
       autoIncrement: true 

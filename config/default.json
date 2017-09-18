@@ -27,7 +27,8 @@
     "local": {
       "entity": "user",
       "usernameField": "nomorinduk",
-      "passwordField": "password"
+      "passwordField": "password",
+      "statusField":"status"
     }
   },
   "mysql": "mysql://root:@localhost:3306/apiabsensi"
