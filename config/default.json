@@ -31,5 +31,5 @@
       "statusField":"status"
     }
   },
-  "mysql": "mysql://root:@localhost:3306/apiabsensi"
+  "mysql": "mysql://root:admin123@localhost:3306/apiabsensi"
 }

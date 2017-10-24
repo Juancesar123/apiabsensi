@@ -39,7 +39,10 @@ module.exports = function (app) {
       type: Sequelize.STRING,
       allowNull: true
     },
-  
+    gambar: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
   
   }, {
     hooks: {
