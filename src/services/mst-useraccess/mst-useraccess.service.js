@@ -11,8 +11,7 @@ module.exports = function () {
 
   const options = {
     name: 'mst-useraccess',
-    Model,
-    paginate
+    Model
   };
 
   // Initialize our service with any options it requires

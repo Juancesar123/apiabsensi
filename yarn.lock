@@ -973,9 +973,9 @@ feathers-rest@^1.8.0:
     feathers-errors "^2.0.1"
     qs "^6.4.0"
 
-feathers-sequelize@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/feathers-sequelize/-/feathers-sequelize-2.3.1.tgz#5e4ad425d5df3f17c9225fbfc60cd6e3e7d1dd1c"
+feathers-sequelize@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/feathers-sequelize/-/feathers-sequelize-2.3.2.tgz#49bbd6a7cbc4159536369f2cacb08581e361f8c2"
   dependencies:
     feathers-commons "^0.8.4"
     feathers-errors "^2.0.1"
@@ -2139,9 +2139,9 @@ seq-queue@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/seq-queue/-/seq-queue-0.0.5.tgz#d56812e1c017a6e4e7c3e3a37a1da6d78dd3c93e"
 
-sequelize@^4.13.6:
-  version "4.13.6"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.13.6.tgz#ec8645371e3960b16c38e4d9e57221f9faaf5767"
+sequelize@^4.20.1:
+  version "4.20.1"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.20.1.tgz#97a51ff46c17070dd7fa6fcdcf54cee918d77a77"
   dependencies:
     bluebird "^3.4.6"
     cls-bluebird "^2.0.1"
@@ -2158,7 +2158,7 @@ sequelize@^4.13.6:
     terraformer-wkt-parser "^1.1.2"
     toposort-class "^1.0.1"
     uuid "^3.0.0"
-    validator "^8.0.0"
+    validator "^9.1.0"
     wkx "^0.4.1"
 
 sequelize@^4.3.1:
@@ -2494,6 +2494,10 @@ uws@~0.14.4:
 validator@^8.0.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/validator/-/validator-8.1.0.tgz#89cf6b512ff71eba886afd8d10d47f8dc800eac0"
+
+validator@^9.1.0:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-9.1.1.tgz#3bdd1065cbd28f9d96ac806dee01030d32fd97ef"
 
 vary@^1, vary@~1.1.1:
   version "1.1.1"

@@ -31,6 +31,14 @@ module.exports = function (app) {
       type: Sequelize.STRING,
       allowNull: true,
     },
+    email: {
+      type: Sequelize.STRING,
+      allowNull: true,
+    },
+    nomorhp: {
+      type: Sequelize.STRING,
+      allowNull: true,
+    },
     password: {
       type: Sequelize.STRING,
       allowNull: true
@@ -39,10 +47,19 @@ module.exports = function (app) {
       type: Sequelize.STRING,
       allowNull: true
     },
+    namasekolah: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
     gambar: {
       type: Sequelize.STRING,
       allowNull: true
     },
+    deviceid: {
+      type: Sequelize.STRING,
+      allowNull: true
+    },
+    
   
   }, {
     hooks: {
