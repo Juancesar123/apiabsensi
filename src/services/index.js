@@ -6,6 +6,8 @@ const mstUseraccess = require('./mst-useraccess/mst-useraccess.service.js');
 const settingjam = require('./settingjam/settingjam.service.js');
 const mastersekolah = require('./mastersekolah/mastersekolah.service.js');
 const dataperson = require('./dataperson/dataperson.service.js');
+const tmpsuratketerangan = require('./tmpsuratketerangan/tmpsuratketerangan.service.js');
+const testupload = require('./testupload/testupload.service.js');
 module.exports = function () {
   const app = this; // eslint-disable-line no-unused-vars
   app.configure(users);
@@ -16,4 +18,6 @@ module.exports = function () {
   app.configure(settingjam);
   app.configure(mastersekolah);
   app.configure(dataperson);
+  app.configure(tmpsuratketerangan);
+  app.configure(testupload);
 };

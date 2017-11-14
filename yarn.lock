@@ -973,9 +973,9 @@ feathers-rest@^1.8.0:
     feathers-errors "^2.0.1"
     qs "^6.4.0"
 
-feathers-sequelize@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/feathers-sequelize/-/feathers-sequelize-2.3.2.tgz#49bbd6a7cbc4159536369f2cacb08581e361f8c2"
+feathers-sequelize@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/feathers-sequelize/-/feathers-sequelize-2.4.0.tgz#a87216b7b76f2edddf90cb69fbaad90692c26ce4"
   dependencies:
     feathers-commons "^0.8.4"
     feathers-errors "^2.0.1"
@@ -2139,9 +2139,9 @@ seq-queue@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/seq-queue/-/seq-queue-0.0.5.tgz#d56812e1c017a6e4e7c3e3a37a1da6d78dd3c93e"
 
-sequelize@^4.20.1:
-  version "4.20.1"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.20.1.tgz#97a51ff46c17070dd7fa6fcdcf54cee918d77a77"
+sequelize@^4.22.5:
+  version "4.22.5"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.22.5.tgz#5771f8dc2173c61366d77b9fb89aeb34b0522435"
   dependencies:
     bluebird "^3.4.6"
     cls-bluebird "^2.0.1"
