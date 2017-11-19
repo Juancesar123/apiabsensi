@@ -35,6 +35,10 @@ module.exports = function (app) {
       type: DataTypes.STRING,
       allowNull: false
     },
+    kodesekolah: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     
   }, {
     hooks: {
