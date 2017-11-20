@@ -54,13 +54,7 @@ module.exports = function (app) {
     gambar: {
       type: Sequelize.STRING,
       allowNull: true
-    },
-    deviceid: {
-      type: Sequelize.STRING,
-      allowNull: true
-    },
-    
-  
+    },  
   }, {
     hooks: {
       beforeCount(options) {
