@@ -8,7 +8,7 @@ module.exports = function (app) {
   
     nomorinduk: {
       type: Sequelize.STRING,
-      allowNull: true,
+      allowNull: false,
       unique: true
     },
     uid: {
