@@ -9,7 +9,7 @@ module.exports = function (app) {
     id_rec: {
       type: Sequelize.INTEGER, 
       primaryKey: true,
-      autoIncrement: true 
+      autoIncrement: false 
     },
     Nomor_Induk: {
       type: DataTypes.STRING,
@@ -25,71 +25,71 @@ module.exports = function (app) {
     },
     Tanggal: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Jam: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Absen: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Keterangan: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Status: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Hadir: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Sakit: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Sakit_SD: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Ijin: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Alpa: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Cuti: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Dinas: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Keterlambatan: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Foto_Ketidakhadiran: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Pulang_Lebih_Awal: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Status_Pengajuan_Ketidakhadiran: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     Kode_Sekolah: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
   }, {
     hooks: {

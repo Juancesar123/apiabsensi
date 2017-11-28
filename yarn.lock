@@ -2139,9 +2139,9 @@ seq-queue@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/seq-queue/-/seq-queue-0.0.5.tgz#d56812e1c017a6e4e7c3e3a37a1da6d78dd3c93e"
 
-sequelize@^4.22.11:
-  version "4.22.11"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.22.11.tgz#86d19ab4124295926c79afaee9fe518d244efcf3"
+sequelize@^4.23.1:
+  version "4.23.1"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.23.1.tgz#2ec517bbb2ccddece45f934ef3c770cfbe818a8b"
   dependencies:
     bluebird "^3.4.6"
     cls-bluebird "^2.0.1"

@@ -5,53 +5,27 @@ const DataTypes = Sequelize.DataTypes;
 
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
-  const tmpsuratketerangan = sequelizeClient.define('tmpsuratketerangan', {
-    id :{
-      type: Sequelize.INTEGER, 
-      primaryKey: true,
-      autoIncrement: true 
-    },
-    nomorinduk: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    userid: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    useracces: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
+  const dataperson = sequelizeClient.define('dataperson', {
     nama: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    keterangan: {
+    alamat: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    tanggal: {
+    nomorhp: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    note: {
+    telepon: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    gambar: {
+    email: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    status: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    kodesekolah: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    
+    }
   }, {
     hooks: {
       beforeCount(options) {
@@ -60,10 +34,10 @@ module.exports = function (app) {
     }
   });
 
-  tmpsuratketerangan.associate = function (models) { // eslint-disable-line no-unused-vars
+  dataperson.associate = function (models) { // eslint-disable-line no-unused-vars
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
   };
 
-  return tmpsuratketerangan;
+  return dataperson;
 };

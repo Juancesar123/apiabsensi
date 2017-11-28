@@ -9,6 +9,7 @@ const dataperson = require('./dataperson/dataperson.service.js');
 const tmpsuratketerangan = require('./tmpsuratketerangan/tmpsuratketerangan.service.js');
 const testupload = require('./testupload/testupload.service.js');
 const laporanabsensi = require('./laporanabsensi/laporanabsensi.service.js');
+const importdatasiswa = require('./importdatasiswa/importdatasiswa.service.js');
 module.exports = function () {
   const app = this; // eslint-disable-line no-unused-vars
   app.configure(users);
@@ -22,4 +23,5 @@ module.exports = function () {
   app.configure(tmpsuratketerangan);
   app.configure(testupload);
   app.configure(laporanabsensi);
+  app.configure(importdatasiswa);
 };

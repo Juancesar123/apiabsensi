@@ -1,8 +1,8 @@
-// Initializes the `laporanabsensi` service on path `/laporanabsensi`
+// Initializes the `importdatasiswa` service on path `/importdatasiswa`
 const createService = require('feathers-sequelize');
-const createModel = require('../../models/laporanabsensi.model');
-const hooks = require('./laporanabsensi.hooks');
-const filters = require('./laporanabsensi.filters');
+const createModel = require('../../models/importdatasiswa.model');
+const hooks = require('./importdatasiswa.hooks');
+const filters = require('./importdatasiswa.filters');
 
 module.exports = function () {
   const app = this;
@@ -10,15 +10,16 @@ module.exports = function () {
   const paginate = app.get('paginate');
 
   const options = {
-    name: 'laporanabsensi',
+    name: 'importdatasiswa',
     Model,
+    paginate
   };
 
   // Initialize our service with any options it requires
-  app.use('/laporanabsensi', createService(options));
+  app.use('/importdatasiswa', createService(options));
 
   // Get our initialized service so that we can register hooks and filters
-  const service = app.service('laporanabsensi');
+  const service = app.service('importdatasiswa');
 
   service.hooks(hooks);
 
